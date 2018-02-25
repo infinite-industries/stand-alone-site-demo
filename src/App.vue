@@ -4,7 +4,7 @@
       <v-layout justify-space-around align-center>
       <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
       <v-spacer></v-spacer>
-      <v-toolbar-title>Sound stories. Sound voices.</v-toolbar-title>
+      <v-toolbar-title>Mock-up Community Radio Events Page.</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn color="blue" class="white--text">Listen</v-btn>
       <v-btn color="red" class="white--text">DONATE</v-btn>

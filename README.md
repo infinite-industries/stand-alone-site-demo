@@ -1,6 +1,6 @@
 # kuow
 
-> A mockup of the KUOW radio events page
+> A mockup of the a radio events page
 
 ## Build Setup
 
