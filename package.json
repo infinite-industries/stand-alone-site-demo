@@ -1,7 +1,7 @@
 {
   "name": "kuow",
   "version": "1.0.0",
-  "description": "A mockup of the KUOW radio events page",
+  "description": "A mockup of a radio events page",
   "author": "Michael Brewster <michael.brewster@gmail.com>",
   "private": true,
   "scripts": {
@@ -11,6 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.5.2",
     "vuetify": "^1.0.0"
   },
