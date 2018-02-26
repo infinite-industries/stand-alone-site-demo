@@ -1,6 +1,6 @@
-# kuow
+# Demo Site
 
-> A mockup of the a radio events page
+> A mockup of a radio events page
 
 ## Build Setup
 
