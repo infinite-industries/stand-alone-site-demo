@@ -11,10 +11,10 @@
         <v-btn color="red" class="white--text">DONATE</v-btn>
         </v-layout>
       </v-toolbar>
-      <v-toolbar class="white lighten-5" dense>
+      <v-toolbar class="grey lighten-4" dense>
         <v-menu v-for="(item, index) in menu_items" v-bind:key="index">
           <v-toolbar-items slot="activator">
-            <v-btn>{{ item }}<v-icon dark>arrow_drop_down</v-icon></v-btn>
+            <v-btn depressed>{{ item }}<v-icon dark>arrow_drop_down</v-icon></v-btn>
           </v-toolbar-items>
         </v-menu>
       </v-toolbar>
@@ -33,12 +33,12 @@
           <v-icon>search</v-icon>
         </form>
         <v-toolbar-items>
-            <v-btn><font color="blue" size="3">Find By Category<v-icon dark>arrow_drop_down</v-icon></font></v-btn>
-            <v-btn><font color="blue" size="3">Find By Date<v-icon dark>arrow_drop_down</v-icon></font></v-btn>
+            <v-btn depressed><font color="blue" size="3">Find By Category<v-icon dark>arrow_drop_down</v-icon></font></v-btn>
+            <v-btn depressed><font color="blue" size="3">Find By Date<v-icon dark>arrow_drop_down</v-icon></font></v-btn>
         </v-toolbar-items>
         <v-spacer></v-spacer>
         <v-toolbar-items>
-            <v-btn><font color="blue" size="3"><v-icon dark>event</v-icon>Submit An Event</font></v-btn>
+            <v-btn depressed><font color="blue" size="3"><v-icon dark>event</v-icon>Submit An Event</font></v-btn>
         </v-toolbar-items>
       </v-toolbar>
       <v-card>
@@ -52,20 +52,23 @@
                       <v-card-media :src="event.image" height="200px" contain></v-card-media>
                     </v-flex>
                     <v-flex xs7>
-                      <v-card-title primary-title>
+                      <v-card-title primary-title align="left">
                         <div class="headline">
                           {{ event.title }}
                         </div>
                       </v-card-title>
-                        <div>
+                      <v-card-text>
+                        <div style="font-weight:bold">
                           {{ event.brief_description }}
                         </div>
                         <br />
                         <div>
                           <p>
+                            {{ event.venues[0] }}<br />
                             <span v-html="event.when"></span>
                           </p>
                         </div>
+                      </v-card-text>
                     </v-flex>
                   </v-layout>
                 </v-container>
